@@ -1,0 +1,52 @@
+button {
+  width:100px;
+  height:100px;
+}
+.tit{
+  color:#ed0707;
+  font-family: serif;
+  font-weight: bold;
+
+
+}
+#p2{
+  display:none;
+}
+.p11{
+    animation:blinkingText 1.2s infinite;
+    text-align:center;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+.p22{
+    animation:blinkingText 1.2s infinite;
+    text-align:center;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+ height:auto;
+ box-sizing: border-box;
+   /* height: auto;/* Should be removed. Only for demonstration */ */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+}
